@@ -4,7 +4,7 @@ import { GlobalContext } from "./context/context";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import axios from "axios";
 
-// import Home from "./components/home";
+import Home from "./components/home";
 import About from "./components/about";
 import Gallery from "./components/gallery";
 import Login from "./components/login";
@@ -27,9 +27,13 @@ function App() {
   // const [isLogin, setIsLogin] = useState(false);
   let { state, dispatch } = useContext(GlobalContext);
 
-  const [fullName, setFullName] = useState("");
+  const [products, setProducts] = useState("");
 
   const logoutHandler = () => {};
+
+  // const AddProduct=()=>{
+  //   document.getElementById("main-add").style.visibility = "visible";
+  // }
 
   useEffect(() => {
     // const baseUrl = "http://localhost:5001";
@@ -41,7 +45,7 @@ function App() {
         });
 
         console.log("response: ", response);
-
+        setProducts(response.data.data.reverse())
         dispatch({
           type: "USER_LOGIN",
         });
@@ -59,7 +63,10 @@ function App() {
   return (
     <div>
       {state.isLogin === true ? (
-        <Add />
+        <ul>
+          <button id="open-product-form">Add Product</button>
+          <Add/>
+        </ul>
        )  ://<ul className="navBar">
       //   <li>
       //     <Link to={`/`}>Home</Link>
@@ -115,6 +122,10 @@ function App() {
           />
         </div>
       ) : null}
+
+      
+
+      
     </div>
   );
 }

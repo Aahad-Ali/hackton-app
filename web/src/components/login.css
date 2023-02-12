@@ -9,7 +9,11 @@
 }
 .login-heading{
     font-weight: bold;
+    color: #61B846;
     
+}
+.discount{
+    color: #024F9D;
 }
 .login-page{
 padding: 20px;

@@ -43,7 +43,8 @@ function Signup() {
 
   return (
     <div className="container signup-page">
-      <h1 className="signup-heading">This is Signup page</h1>
+      <h1 className="login-heading">SAYLANI WELFARE</h1>
+            <h4 className="discount">ONLINE DISCOUNT STORE</h4>
       <form onSubmit={signupHandler}>
         <div className="input-group mb-3">
           <input

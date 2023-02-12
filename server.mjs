@@ -36,13 +36,10 @@ let productSchema = new mongoose.Schema({
 const productModel = mongoose.model("products", productSchema);
 
 const userSchema = new mongoose.Schema({
-  productName: { type: String, required: true  },
-  category: { type: String, required: true  },
-  description: { type: String, required: true },
-  unit: { type: String, required: true },
-  price: { type: Number, required: true },
-
-
+  firstName: { type: String, required: true },
+  contact: { type: Number , required: true},
+  email: { type: String, required: true },
+  password: { type: String, required: true },
   createdOn: { type: Date, default: Date.now },
 });
 const userModel = mongoose.model("Users", userSchema);
@@ -85,7 +82,7 @@ app.post("/api/v1/signup", (req, res) => {
           userModel.create(
             {
               firstName: body.firstName,
-              lastName: body.lastName,
+              contact: body.contact,
               email: body.email,
               password: hashString,
             },

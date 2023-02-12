@@ -20,9 +20,26 @@
   font-weight: bold;
   color: #fff;
 }
+.togglor-login Link{
+  background-color: #61B846;
+}
 
 .togglor-signup {
   padding: 10px;
   font-weight: bold;
   color: #fff;
 }
+#open-product-form{
+  border: none;
+  border-radius: 10px;
+    background-color: #61B846;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+/* .main-add{
+  visibility: hidden;
+} */

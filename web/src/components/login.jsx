@@ -62,7 +62,8 @@ function Login() {
         <div className="row">
           <div className="col">
             {/* <h4>This is Login page</h4> */}
-            <h1 className="login-heading">This is Login page</h1>
+            <h1 className="login-heading">SAYLANI WELFARE</h1>
+            <h4 className="discount">ONLINE DISCOUNT STORE</h4>
             {state.text}
             {/* 
       <form onSubmit={loginHandler} className="loginForm">
