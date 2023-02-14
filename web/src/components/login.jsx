@@ -12,7 +12,7 @@ if (window.location.href.split(":")[0] === "http") {
   baseUrl = `http://localhost:5001`;
 }
 else {
-  baseUrl = `https://context-api-with-jwt.cyclic.app`;
+  baseUrl = `https://awful-lingerie-fox.cyclic.app/`;
 }
 
 function Login() {
