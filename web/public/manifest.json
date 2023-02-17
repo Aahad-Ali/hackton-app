@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Commerce",
+  "name": "Aahad-Com",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,15 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://awful-lingerie-fox.cyclic.app/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "This is my first PWA application",
+  "dir": "auto",
+  "scope": "https://awful-lingerie-fox.cyclic.app/",
+  "lang": "en",
+  "categories": [
+    "shopping"
+  ]
 }
